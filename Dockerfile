@@ -20,4 +20,5 @@ RUN pip install -r requirements.txt
 COPY app.py /app.py
 
 EXPOSE  5000
-CMD ["python", "/app.py", "-p 5000"]
+#CMD ["python", "/app.py", "-p 5000"]
+CMD ["python", "app.py"]
