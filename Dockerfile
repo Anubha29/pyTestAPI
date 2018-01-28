@@ -4,6 +4,7 @@ FROM ubuntu:16.04
 RUN apt-get -yqq update
 RUN apt-get install -yqq python
 RUN apt-get -yqq install python-pip
+RUN apt-get install sqlite3 libsqlite3-dev
 
 # Install DB
 RUN sqlite3 salaries.db
